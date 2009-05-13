@@ -1,0 +1,2 @@
+selenium.core.version=1.0-beta-2
+selenium.core.revision=2330
