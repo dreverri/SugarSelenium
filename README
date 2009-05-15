@@ -67,16 +67,11 @@ Selenium tests are written as HTML tables, for example:
 </tr>
 
 <tr>
-	<td>uncheck</td>
+	<td>check</td>
 	<td>//input[@name='system_skypeout_on' and @value='1']</td>
 	<td></td>
 </tr>
 
-<tr>
-	<td>click</td>
-	<td>//input[@name='system_skypeout_on' and @value='1']</td>
-	<td></td>
-</tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>save</td>
