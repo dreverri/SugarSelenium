@@ -1,0 +1,119 @@
+SugarCRM module to integrate Selenium with SugarCRM.
+
+To use:
+
+Create the module zip file:
+git clone git://github.com/dreverri/SugarSelenium.git
+cd SugarSelenium
+zip SugarSelenium.zip .
+
+Install module in Sugar:
+Login to Sugar as an admin user
+Navigate to Admin > Module Loader
+Browse to and Upload the zip file created above
+Click Install
+
+Write a test:
+Navigate to the Test module
+Click Create Test
+Enter a name for the test
+Enter the test definition in Description
+Selenium tests are written as HTML tables, for example:
+<table>
+<tr>
+	<td>open</td>
+	<td>index.php?module=Home&action=index</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='0_lv']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>first_name</td>
+	<td>Bug</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>last_name</td>
+	<td>29485</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phone_work</td>
+	<td>+55 5 55 55 55 55-55 55 5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=System Settings</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>uncheck</td>
+	<td>//input[@name='system_skypeout_on' and @value='1']</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>click</td>
+	<td>//input[@name='system_skypeout_on' and @value='1']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Bug 29485</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=System Settings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='1_lv']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>next</td>
+	<td></td>
+</tr>
+</table>
+
+* The above test corresponds to bug #29485 - http://bugs.sugarcm.com?bug_number=29485
+
+Click Save
+Click Run Tests from the Shortcuts menu
+Click Go in the upper right corner of the TestRunner page
+Click Run All Tests (green play button in upper right panel) when the test suite has loaded
+
+
