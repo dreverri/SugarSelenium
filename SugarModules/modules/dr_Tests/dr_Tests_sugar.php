@@ -45,7 +45,7 @@ class dr_Tests_sugar extends Basic {
 	var $module_dir = 'dr_Tests';
 	var $object_name = 'dr_Tests';
 	var $table_name = 'dr_tests';
-	var $importable = false;
+	var $importable = true;
 	//#28647 , We should keep this line in ce , pro and ent. If the custom module was built without team security, we should keep this line.
 	var $disable_row_level_security = true ; // to ensure that modules created and deployed under CE will continue to function under team security if the instance is upgraded to PRO
 		var $id;
