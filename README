@@ -108,7 +108,7 @@ Selenium tests are written as HTML tables, for example:
 
 Click Save
 Click Run Tests from the Shortcuts menu
-Click Go in the upper right corner of the TestRunner page
+Click Go in the upper left corner of the TestRunner page
 Click Run All Tests (green play button in upper right panel) when the test suite has loaded
 
 
