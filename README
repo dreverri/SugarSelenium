@@ -5,7 +5,7 @@ To use:
 Create the module zip file:
 git clone git://github.com/dreverri/SugarSelenium.git
 cd SugarSelenium
-zip SugarSelenium.zip .
+zip -r SugarSelenium.zip *
 
 Install module in Sugar:
 Login to Sugar as an admin user
