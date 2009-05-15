@@ -104,7 +104,7 @@ Selenium tests are written as HTML tables, for example:
 </tr>
 </table>
 
-* The above test corresponds to bug #29485 - http://bugs.sugarcm.com?bug_number=29485
+* The above test corresponds to bug #29485 - http://bugs.sugarcrm.com?bug_number=29485
 
 Click Save
 Click Run Tests from the Shortcuts menu
